@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-const shade = `rgba(255, 255, 255, 0.4)`;
-
 // position: static on the image wrapper resets the absolute positioning and allows for some custom styling
 // the single/project templates have different headers
 
@@ -44,8 +42,8 @@ const BGImage = styled.div`
 		`}
   &:after {
     backface-visibility: hidden;
-    background: ${({ theme }) => `linear-gradient(to bottom, ${shade} 0%, ${theme.colors.bg_color} 100%),
-      linear-gradient(to right, ${shade} 50%, ${theme.colors.bg_color} 100%)`};
+    background: ${({ theme }) => `linear-gradient(to bottom,  ${theme.colors.bg_color} 100%),
+      linear-gradient(to right,  ${theme.colors.bg_color} 100%)`};
     content: '';
     height: 100%;
     left: 0;
