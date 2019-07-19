@@ -4,11 +4,14 @@ import { FaInstagram, FaBehance, FaDribbble } from 'react-icons/fa';
 import styled from 'styled-components';
 import config from '../../config/website';
 import mdgblack from './mdgblack.png';
+import Menu from './Menu.js'
 
 const Wrapper = styled.header`
 	align-items: center;
 	display: flex;
+	position: fixed;
 	padding: 1rem 0 1rem 0;
+	background-color: white;
 	position: relative;
 	z-index: 1000;
 	a {
@@ -29,6 +32,7 @@ const Wrapper = styled.header`
 const Nav = styled.nav`
 	display: flex;
 	flex: 1;
+
 	justify-content: flex-start;
 	padding: 0 ${(props) => props.theme.spacer.horizontal};
 	a:not(:first-child) {
@@ -44,6 +48,7 @@ const Nav = styled.nav`
 
 const Name = styled.div`
 	display: flex;
+	position:
 	flex: 1;
 	justify-content: center;
 	a {
@@ -91,25 +96,19 @@ const Navigation = () => {
 	return (
 		<Wrapper data-testid="navigation">
 			<Nav>
-				{data.nav.nodes.map((n, index) => (
-					<Link
-						key={n.fields.slug}
-						to={n.fields.slug}
-						data-testid={`navItem-${index}`}
-						activeClassName="nav-active"
-					>
-						{n.frontmatter.title}
-					</Link>
-				))}
+			<Menu />
+
+
 			</Nav>
 			<Name>
 				<Link to="/" data-testid="home-title-link">
 					<img src={mdgblack} width={60} />
 				</Link>
 			</Name>
+
 			<SocialMedia>
 				<a
-					href="https://www.instagram.com/lekoarts.de"
+					href="https://www.instagram.com/milqdagame"
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Instagram"
@@ -117,7 +116,7 @@ const Navigation = () => {
 					<FaInstagram />
 				</a>
 				<a
-					href="https://www.behance.net/lekoarts"
+					href="https://www.twitter.com/milkdagame"
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Behance"

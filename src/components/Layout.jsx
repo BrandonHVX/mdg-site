@@ -27,13 +27,16 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children, pathname, customSEO }) => (
   <ThemeProvider theme={theme}>
-    <>
+    <> <div class="navifixed"> <Navigation /></div> 
       {!customSEO && <SEO pathname={pathname} />}
+    
+      
+  <div class= "layout-main">
       <GlobalStyle />
-      <Navigation />
+    
    
       {children}
-      <Footer />
+      <Footer /></div>
     </>
   </ThemeProvider>
 )
