@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import { FaInstagram, FaBehance, FaDribbble } from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaTwitter } from 'react-icons/fa';
 import styled from 'styled-components';
 import config from '../../config/website';
 import mdgblack from './mdgblack.png';
@@ -116,15 +116,15 @@ const Navigation = () => {
 					<FaInstagram />
 				</a>
 				<a
-					href="https://www.twitter.com/milkdagame"
+					href="https://www.twitter.com/milqdagame"
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Behance"
 				>
-					<FaBehance />
+					<FaTwitter />
 				</a>
-				<a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
-					<FaDribbble />
+				<a href="mailto:milqdagameent@gmail.com?Subject=Hello%20Milq Da Game Business" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+					<FaEnvelope />
 				</a>
 			</SocialMedia>
 		</Wrapper>
